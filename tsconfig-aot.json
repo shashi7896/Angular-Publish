@@ -1,0 +1,30 @@
+{
+    "compilerOptions":{
+        "baseUrl": "dist",
+        "declaration": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./",
+        "sourceMap": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": ["es2015", "dom", "es6"],
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "typeRoots": [
+            "../../node_modules/@types/"
+        ]
+    },
+    "files": [
+        "./dist/index.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "angularCompilerOptions":{
+        "genDir": "aot",
+        "skipMetadataEmit": true,
+        "entryModule": "src/app/test-module.module#TestModuleModule"
+    }
+}
